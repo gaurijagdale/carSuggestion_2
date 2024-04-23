@@ -43,7 +43,7 @@
                 {% for model in models %}
                 <div class="car flex w-full h-60 items-center justify-between gap-1">
                     <div class="img w-2/5 h-60 bg-red-500 rounded-lg"
-                         style="background-image: url('{{ model.image }}'); background-size: cover;"></div>
+                         style="background-image: url('{{ model.image.url }}'); background-size: cover; background-position: center;"></div>
                     <div class="sm-des w-4/6 m-6 h-full p-8 bg-blue-900 rounded-lg flex flex-col items-start justify-center">
                         <h2 class="text-xl mb-2">{{ model.name }}</h2>
                         <h1 class="text-2xl mb-2">{{ model.price }} - {{ model.fin_price }} Lakhs* <span class="text-sm">(Price in New Delhi)</span></h1>

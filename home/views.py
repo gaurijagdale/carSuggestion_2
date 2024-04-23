@@ -17,8 +17,20 @@ def brands(request):
 def autoguide(request):
     return render(request, "autoguide.html")
 
-def brand_detail(request, brand_name):
-    brand = get_object_or_404(Brand, name=brand_name)
-    models = brand.carmodel_set.all()  # Retrieve all car models for this brand
+
+def kia(request):
+    # Fetch brand and models data for Kia
+    brand = Brand.objects.get(name='Kia')
+    models = CarModel.objects.filter(brand=brand)
+    return render(request, 'kia.html', {'brand': brand, 'models': models})
+
+def renault(request):
+    brand = Brand.objects.get(name='Renault')
+    models = CarModel.objects.filter(brand=brand)
+    return render(request, 'kia.html', {'brand': brand, 'models': models})
+
+def toyota(request):
+    brand = Brand.objects.get(name='Toyota')
+    models = CarModel.objects.filter(brand=brand)
     return render(request, 'kia.html', {'brand': brand, 'models': models})
 

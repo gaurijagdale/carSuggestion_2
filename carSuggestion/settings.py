@@ -130,6 +130,11 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
 ]
 
+# Define the MEDIA_ROOT for storing uploaded media files
+MEDIA_ROOT = os.path.join(BASE_DIR, '')
+
+# Define the MEDIA_URL to serve media files during development
+MEDIA_URL = '/'
 
 
 

@@ -9,8 +9,8 @@ urlpatterns = [
     path("brands", views.brands, name="brands"),
     path("autoguide", views.autoguide, name="autoguide"),
 
-    path('brands/<str:brand_name>/', views.brand_detail, name='brand_detail'),
-    
-
+    path('kia', views.kia, name='kia'),
+    path('renault', views.renault, name='renault'),
+    path('toyota', views.toyota, name='toyota'),
 
 ]
