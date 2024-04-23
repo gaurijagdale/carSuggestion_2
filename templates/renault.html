@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="home.css">
+</head>
+
+<body>
+    <div class="page flex w-full h-full min-h-screen ">
+        <!-- Nav -->
+        <div class="nav-bar fixed h-full w-1/5 bg-slate-950 text-white min-h-screen p-10 flex flex-col gap-8">
+            <div class="w-full text-center ">
+                <h3 class="font-bold text-2xl">Wisdom<span class="text-blue-500">Wheels</span> </h3>
+            </div>
+            <div class="flex flex-col gap-5 font-medium text-xl">
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Sign in</p>
+                <a href="./home.html">
+                    <p class="px-2 py-2 hover:text-blue-600 cursor-pointer ">Home</p>
+                </a>
+                <a href="./FindCar.html">
+                    <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Find your Car</p>
+                </a>
+                <a href="./brands.html">
+                    <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Brands</p>
+                </a>
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">AutoGuide</p>
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">About Us</p>
+
+
+            </div>
+        </div>
+        <!-- Main -->
+        <div class="main min-h-screen min-w-full pl-64 bg-slate-950 text-white p-10 flex flex-col gap-10">
+            <div class="description w-full h-full    p-9">
+                <h1 class="font-bold text-3xl mb-3 text-blue-500">Renault Cars</h1>
+                <p class="text-lg font-medium">There are a total of 3 Renault models currently on sale in India. These
+                    include 1 Hatchback, 1 MUV and 1 SUV. Renault has 3 upcoming car launches in India - the Renault
+                    Kwid EV, Renault Duster 2025, Renault Kardian.</p>
+                <p class="text-lg font-medium">Renault car prices in India:
+                    The price of Renault cars in India starts from ₹ 4.70 Lakh for the KWID while the most expensive
+                    Renault car in India one is the Kiger with a price of ₹ 11.23 Lakh. The newest model in the Renault
+                    line-up is the KWID with a price tag of ₹ 4.70 - 6.45 Lakh. Renault cars in India under 10 Lakh
+                    include the KWID, Triber and Kiger.Renault Used cars are available which include Renault KWID(₹ 1.50
+                    Lakh), Renault Duster(₹ 1.50 Lakh), Renault Scala(₹ 1.75 Lakh), Renault Triber(₹ 4.25 Lakh), Renault
+                    Kiger(₹ 6.00 Lakh).</p>
+            </div>
+            <div class="mid flex justify-between">
+                <h1 class="text-2xl font-semibold text-blue-500">Renault Car Models</h1>
+                <select name="Change Brand" id=""
+                    class="bg-blue-700 text-white p-1 border-white w-40 h-9 rounded-md border-x-gray-700 cursor-pointer">
+                    <option selected="selected" disabled="">Change Brand</option>
+                    <a href="./kia.html"><option value="Kia">Kia</option></a>
+                    <a href="./renault.html"><option value="Renault">Renault</option></a>
+                    <option value="Toyota">Toyota</option>
+                    <option value="Tata">Tata</option>
+                    <option value="Honda">Honda</option>
+                    <option value="Mahindra">Mahindra</option>
+                    <option value="Ford">Ford</option>
+                    <option value="Jeep">Jeep</option>
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                </select>
+            </div>
+            <div class="cars flex flex-col gap-8">
+                <div class="renault-kwid flex w-full h-60 items-center justify-between gap-1">
+                    <div class="img w-2/5 h-60 bg-red-500 rounded-lg"
+                        style="background-image: url(./renault1.png); background-size: cover;"></div>
+                    <div
+                        class="sm-des w-4/6 m-6 h-full p-8 bg-blue-900 rounded-lg flex flex-col items-start justify-center">
+                        <h2 class="text-xl mb-2">Renault KWID</h2>
+                        <h1 class="text-2xl mb-2">Rs 4.70-6.45 Lakh* <span class="text-sm">(Price in New Delhi)</span>
+                        </h1>
+                        <p class="mb-6">Petrol * 21.46 to 22.3 kmpl * Manual/Automatic</p>
+                        <button class="min-w-48 h-9 bg-red-600 border-red-600 ">Check Offers</button>
+                    </div>
+                </div>
+                <div class="renault-triber flex w-full h-60 items-center justify-between gap-1">
+                    <div class="img w-2/5 h-60 bg-red-500 rounded-lg"
+                        style="background-image: url(./renault2.png); background-size: cover;"></div>
+                    <div
+                        class="sm-des w-4/6 m-6 h-full p-8 bg-blue-900 rounded-lg flex flex-col items-start justify-center">
+                        <h2 class="text-xl mb-2">Renault Triber</h2>
+                        <h1 class="text-2xl mb-2">Rs 6-8.97 Lakh* <span class="text-sm">(Price in New Delhi)</span>
+                        </h1>
+                        <p class="mb-6">Petrol * 18.2-20 kmpl * Manual/Automatic</p>
+                        <button class="min-w-48 h-9 bg-red-600 border-red-600 ">Check Offers</button>
+                    </div>
+                </div>
+                <div class="renault kiger flex w-full h-60 items-center justify-between gap-1">
+                    <div class="img w-2/5 h-60 bg-red-500 rounded-lg"
+                        style="background-image: url(./renault3.png   ); background-size: cover;"></div>
+                    <div
+                        class="sm-des w-4/6 m-6 h-full p-8 bg-blue-900 rounded-lg flex flex-col items-start justify-center">
+                        <h2 class="text-xl mb-2">Renault Kiger</h2>
+                        <h1 class="text-2xl mb-2">Rs 6-11.23 Lakh* <span class="text-sm">(Price in New Delhi)</span>
+                        </h1>
+
+                        <p class="mb-6">Petrol * 18.24-20.5 kmpl * Manual/Automatic</p>
+                        <button class="min-w-48 h-9 bg-red-600 border-red-600 ">Check Offers</button>
+                    </div>
+                </div>
+                <h1 class="text-2xl font-semibold mt-12  text-blue-500">Upcoming Renault Cars</h1>
+                <div class="renault-kwid-ev flex w-full h-60 items-center justify-between gap-1">
+                    <div class="img w-2/5 h-60 bg-red-500 rounded-lg"
+                        style="background-image: url(./renault4.png   ); background-size: cover;"></div>
+                    <div
+                        class="sm-des w-4/6 m-6 h-full p-8 bg-blue-900 rounded-lg flex flex-col items-start justify-center">
+                        <h2 class="text-xl mb-2">Renault KWID EV</h2>
+                        <h1 class="text-2xl mb-2">Rs 5 Lakh* <span class="text-sm">(Expected Price)</span>
+                        </h1>
+
+                        <p class="mb-6">Expected launch Jan 15,2025</p>
+                        <button class="min-w-48 h-9 bg-red-600 border-red-600 ">Alert me when launched</button>
+                    </div>
+                </div>
+                <div class="renault-duster flex w-full h-60 items-center justify-between gap-1">
+                    <div class="img w-2/5 h-60 bg-red-500 rounded-lg"
+                        style="background-image: url(./renault5.png   ); background-size: cover;"></div>
+                    <div
+                        class="sm-des w-4/6 m-6 h-full p-8 bg-blue-900 rounded-lg flex flex-col items-start justify-center">
+                        <h2 class="text-xl mb-2">Renault Duster 2025</h2>
+                        <h1 class="text-2xl mb-2">Rs 10 Lakh* <span class="text-sm">(Expected Price)</span>
+                        </h1>
+
+                        <p class="mb-6">Expected Launch Oct 16, 2025</p>
+                        <button class="min-w-48 h-9 bg-red-600 border-red-600 ">Alert me when launched</button>
+                    </div>
+                </div>
+                <div class="renault kiger flex w-full h-60 items-center justify-between gap-1">
+                    <div class="img w-2/5 h-60 bg-red-500 rounded-lg"
+                        style="background-image: url(./renault6.png   ); background-size: cover;"></div>
+                    <div
+                        class="sm-des w-4/6 m-6 h-full p-8 bg-blue-900 rounded-lg flex flex-col items-start justify-center">
+                        <h2 class="text-xl mb-2">Renault Kiger</h2>
+                        <h1 class="text-2xl mb-2">Rs 6-11.23 Lakh* <span class="text-sm">(Expected Price)</span>
+                        </h1>
+
+                        <p class="mb-6">Expected Launch Jun 15, 2026
+                        </p>
+                        <button class="min-w-48 h-9 bg-red-600 border-red-600 ">Alert me when launched</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>

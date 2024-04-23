@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href={% static "home.css" %}>
+</head>
+
+<body>
+    <div class="page flex w-full h-full min-h-screen ">
+        <!-- Nav -->
+        <div class="nav-bar h-full w-1/5 bg-slate-950 text-white min-h-screen p-10 flex flex-col gap-8">
+            <div class="w-full text-center ">
+                <h3 class="font-bold text-2xl">Wisdom<span class="text-blue-500">Wheels</span> </h3>
+            </div>
+            <div class="flex flex-col gap-5 font-medium text-xl">
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Sign in</p>
+                <a href="/">
+                    <p class="px-2 py-2 hover:text-blue-600 cursor-pointer ">Home</p>
+                </a>
+                <a href="/findCars">
+                    <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Find your Car</p>
+                </a>
+                <a href="/brands">
+                    <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Brands</p>
+                </a>
+                <a href="/autoguide">
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">AutoGuide</p>
+            </a>
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">About Us</p>
+
+
+            </div>
+        </div>
+
+
+        <!-- Main -->
+        <div class="main min-h-screen w-4/5 bg-slate-950 text-white p-10 flex flex-col gap-10"
+            style="background-image:url('{% static 'car.jpeg' %}'); background-size: cover;">
+            <div>
+                <p class="text-center font-semibold text-3xl">Life's <span class="text-blue-500">too short </span>for
+                    the
+                    wrong car <br> Get <span class="text-blue-500"> your Car </span>today!</p>
+            </div>
+            <div class="flex gap-8 justify-center items-center h-4/6">
+                <div class="card-1 border shadow-2xl  w-1/6 h-full  rounded-2xl bg-cover bg-center"
+                    style="background-image: url('{% static 'card1.png' %}'); background-size: cover;">
+                </div>
+                <div class="card-2 border shadow-2xl w-1/6 h-full rounded-2xl"
+                    style="background-image: url('{% static 'card2.png' %}'); background-size: cover;">
+                </div>
+                <div class="card-3 border shadow-2xl  w-1/6 h-full rounded-2xl "
+                    style="background-image: url('{% static 'card3.png' %}'); background-size: cover;">
+                </div>
+                <div class="card-4 border shadow-2xl w-1/6 h-full rounded-2xl bg-cover bg-center"
+                    style="background-image: url('{% static 'card4.png' %}'); background-size: cover;">
+
+                </div>
+            </div>
+            <div
+                class="findUrCar text-lg flex w-52 h-12 items-center justify-center text-center p-2 bg-blue-600 mx-auto rounded-full hover:bg-blue-800 cursor-pointer">
+                <a href="findCars">
+                    <button>Find your car</button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

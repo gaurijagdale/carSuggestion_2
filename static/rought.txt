@@ -1,0 +1,36 @@
+<div class="card-2 border w-1/6 h-full rounded-2xl" <h3
+    class="text-lg font-medium bg-black p-2.5 text-white text-center w-36 h-11 items-center justify-center">New Car</h3>
+
+    <select name="severity" id="severity" class="input-select-css" required="" fdprocessedid="yk65n">
+        <option selected="selected" disabled="">Choose Severity</option>
+        <option value="low">Low</option>
+        <option value="mild">Mild</option>
+        <option value="severe">Severe</option>
+    </select>
+
+    <section data-track-section="" data-track-component="The most searched cars" data-type-autofit="height"
+        class="ViewAllCard featuresSection cardViewAll shadow24 marginBottom20 clearfix" data-type-tab="height"
+        data-section="carsByBodyType">
+        <h2 class="">The most searched cars</h2>
+        <div class="">
+            <div class="gsc_ta_scroll  gsc_ta_scroll_move ">
+                <ul class="gsc-ta-clickWrap " data-track-section="tab">
+                    <li title="SUV" class="gsc-ta-active">SUV</li>
+                    <li title="Hatchback" class="">Hatchback</li>
+                    <li title="Sedan" class="">Sedan</li>
+                    <li title="MUV" class="">MUV</li>
+                    <li title="Luxury" class="">Luxury</li>
+                </ul>
+            </div>
+            <div class="contentHold gsc_row  ">
+                <div data-track-section="SUV" class="gsc-ta-content  gsc-ta-active">
+                    <div data-type="css-carousel" class="actionBtn mobileCarousel iPadCarousel posR">
+                        <div class="" style="overflow: hidden;">
+                            <ul id="carsByBodyType" data-section="suv" data-carousel="suv" data-type="carousel"
+                                class="clearfix gsc_main  overXvisible">
+                                <li data-type-autofitmobile="" class="gsc_col-xs-12 gsc_col-sm-5 gsc_col-md-3"
+                                    style="width: 25%;">
+                                    <div class="card shadowWPadding posR " data-img-fit="true">
+                                        <div class="gsc_col-xs-12 paddingnone imgTopRound hover"
+                                            style="min-height: auto;">
+                                            <div class="imageTransition active" data-

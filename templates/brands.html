@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{%load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href={% static "home.css" %}>
+</head>
+
+<body>
+    <div class="page flex w-full h-full min-h-screen ">
+       <!-- Nav -->
+       <div class="nav-bar h-full w-1/5 bg-slate-950 text-white min-h-screen p-10 flex flex-col gap-8">
+        <div class="w-full text-center ">
+            <h3 class="font-bold text-2xl">Wisdom<span class="text-blue-500">Wheels</span> </h3>
+        </div>
+        <div class="flex flex-col gap-5 font-medium text-xl">
+            <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Sign in</p>
+            <a href="/">
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer ">Home</p>
+            </a>
+            <a href="/findCars">
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Find your Car</p>
+            </a>
+            <a href="/brands">
+                <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">Brands</p>
+            </a>
+            <a href="/autoguide">
+            <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">AutoGuide</p>
+        </a>
+            <p class="px-2 py-2 hover:text-blue-600 cursor-pointer">About Us</p>
+
+
+        </div>
+    </div>
+
+    
+        <!-- Main -->
+        <div class="main min-h-screen w-4/5 bg-slate-950 text-white p-10 flex flex-col gap-10"
+            style="background-image: url('{% static 'car.jpeg' %}'); background-size: cover;">
+            <div class="heading w-full text-center font-semibold text-4xl justify-center items-center">
+                <h1>Popular <span class="text-blue-500">Brands</span></h1>
+            </div>
+            <div class="logo w-full h-full justify-center flex-col px-12 py-6 ">
+                <div class="flex ">
+                    <a href={% url 'brand_detail' brand_name='kia' %}>
+                        <div class="kia w-36 h-36 rounded-lg m-2 hover:opacity-70 cursor-pointer"
+                            style="background-image: url('{% static 'kia.png' %}'); background-size: cover;">
+
+                        </div>
+                    </a>
+                    <a href="brands/renault">
+                        <div class="renault w-36 h-36 rounded-lg  m-2 hover:opacity-70 cursor-pointer"
+                            style="background-image: url('{% static 'renault.png' %}'); background-size: cover;">
+
+                        </div>
+                    </a>
+                    <a href="brands/toyota">
+                    <div class="toyota w-36 h-36 rounded-lg m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'toyota.jpg' %}'); background-size: cover;">
+                        </div>
+                    </a>
+                    <a href="renault">
+                    <div class="tata w-36 h-36 rounded-lg  m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'tata.png' %}'); background-size: cover;"></div>
+                    </a>
+                    <a href="renault">
+                    <div class="honda w-36 h-36 rounded-lg  m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'honda.jpg' %}'); background-size: cover;"></div>
+                </div>
+            </a>
+                <div class="flex my-6">
+                
+                <a href="renault">
+                    <div class="mahindra w-36 h-36 rounded-lg  m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'mahindra.jpg' %}'); background-size: cover;"></div>
+                    </a>
+                    <a href="renault">
+                    <div class="ford w-36 h-36 rounded-lg  m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'ford.jpg' %}'); background-size: cover;"></div>
+                    </a>
+                    <a href="renault">
+                    <div class="jeep w-36 h-36 rounded-lg  m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'jeep.png' %}'); background-size:cover; "></div>
+                    </a>
+                    <a href="renault">
+                    <div class="audi w-36 h-36 rounded-lg  m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'audi.png' %}'); background-size: cover;"></div>
+                    </a>
+                    <a href="renault">
+                    <div class="bmw w-36 h-36 rounded-lg m-2 hover:opacity-70 cursor-pointer"
+                        style="background-image: url('{% static 'bmw.jpg' %}'); background-size: cover;"></div>
+                </div>
+            </a>
+            </div>
+        </div>
